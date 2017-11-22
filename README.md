@@ -33,3 +33,5 @@ Output
 - validHost (Boolean)
 - validUser (Boolean)
  
+<hr>
+<sub><b>Note:</b> more TCI Extensions can be found here: https://tibcosoftware.github.io/tci-awesome/ </sub>
