@@ -1,0 +1,59 @@
+{
+    "name": "concat",
+    "version": "1.2.0",
+    "title": "Concat Activity",
+    "author": "TIBCO Software Inc. [JGrotex]",
+    "type": "flogo:activity",
+     
+    "display": {
+       "category": "smalltools",
+       "visible": true,
+       "smallIcon": "concat.png",
+       "description": "Activity returns concatenation of two strings"
+    },
+ 
+    "ref": "github.com/JGrotex/tci-wi-smalltools-extension/smalltools/activity/concat",
+    "inputs": [
+           {
+            "name": "firstString",
+            "type": "string",
+            "required": true
+           },
+           {
+            "name": "secondString",
+            "type": "string",
+            "required": true
+           },
+           {
+            "name": "useSeparator",
+            "type": "boolean",
+            "required": true,
+            "display": {
+               "name": "Use Separator",
+               "description": "Use separator for concatenation"
+            },
+            "value": true
+           },
+           {
+            "name": "separator",
+            "type": "string",
+            "required": true,
+            "display": {
+               "name": "Separator",
+               "type": "dropdown",
+               "selection": "single",
+               "description": "Select a separator for concatenation",
+               "visible": true
+            },
+            "allowed":[";","-","+","_","|"],
+            "value": "-"
+           }
+    ],
+  
+    "outputs": [
+           {
+            "name": "result",
+            "type": "string"
+          }
+    ]
+}
