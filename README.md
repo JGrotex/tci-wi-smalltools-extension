@@ -15,7 +15,7 @@ Just to show how simple a Implemenation could be.
 
 Input
 - string1 (String)
-- string1 (String)
+- string2 (String)
 - Seperator (String, one of ";","-","+","_","|" Default is "-")
 
 Output
