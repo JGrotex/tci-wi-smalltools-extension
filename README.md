@@ -22,16 +22,13 @@ Output
 - result (String) as full String
 
 ### EMail Addr Validation
-Just planed, ... not Implemented yet, ... but it will look like follows
+validates an EMail Addr
 
 Input
 - Email Addr (String)
 
 Output
-- valid (Boolean) overall Status Summary
-- validFormat (Boolean)
-- validHost (Boolean)
-- validUser (Boolean)
+- valid (Boolean) just Format check
  
 <hr>
 <sub><b>Note:</b> more TCI Extensions can be found here: https://tibcosoftware.github.io/tci-awesome/ </sub>
