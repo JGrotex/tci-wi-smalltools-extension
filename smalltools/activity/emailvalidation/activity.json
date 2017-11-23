@@ -1,0 +1,42 @@
+{
+    "name": "emailvalidation",
+    "version": "1.2.0",
+    "title": "Concat Activity",
+    "author": "TIBCO Software Inc. [JGrotex]",
+    "type": "flogo:activity",
+     
+    "display": {
+       "category": "smalltools",
+       "visible": true,
+       "smallIcon": "emailvalidation.png",
+       "description": "Activity validates any email Addr"
+    },
+ 
+    "ref": "github.com/JGrotex/tci-wi-smalltools-extension/smalltools/activity/emailvalidation",
+    "inputs": [
+        {
+            "name": "email",
+            "type": "string",
+            "required": true
+        }
+    ],
+  
+    "outputs": [
+        {
+            "name": "valid",
+            "type": "boolean"
+        },
+        {
+            "name": "validFormat",
+            "type": "boolean"
+        },
+        {
+            "name": "validHost",
+            "type": "boolean"
+        },
+        {
+            "name": "validUser",
+            "type": "boolean"
+        }
+    ]
+}

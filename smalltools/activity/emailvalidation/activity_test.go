@@ -3,7 +3,7 @@
  * This file is subject to the license terms contained
  * in the license file that is distributed with this file.
  */
-package concat
+package emailvalidation
 
 import (
 	"io/ioutil"
@@ -39,17 +39,14 @@ func TestActivityRegistration(t *testing.T) {
 func TestEval(t *testing.T) {
 	act := NewActivity(getActivityMetadata())
 	tc := test.NewTestActivityContext(act.Metadata())
-	//setup attrs
-	tc.SetInput("firstString", "Hello")
-	tc.SetInput("secondString", "TCIWI!")
-	tc.SetInput("useSeparator", true)
-	tc.SetInput("separator", "-")
+
+	//setup input attrs
+	tc.SetInput("email", "joerg@grote-online.de")
 
 	_, err := act.Eval(tc)
 	assert.Nil(t, err)
 
-	result := tc.GetOutput("result")
-	assert.Equal(t, result, "Hello-TCIWI!")
+	assert.Equal(t, true, tc.GetOutput("valid"))
 
-	t.Log(result)
+	t.Log(tc.GetOutput("valid"))
 }
