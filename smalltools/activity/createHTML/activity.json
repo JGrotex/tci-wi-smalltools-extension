@@ -1,0 +1,40 @@
+{
+    "name": "createHTML",
+    "version": "1.0.0",
+    "title": "Concat Activity",
+    "author": "TIBCO Software Inc. [JGrotex]",
+    "type": "flogo:activity",
+     
+    "display": {
+       "category": "smalltools",
+       "visible": true,
+       "smallIcon": "createHTML.png",
+       "description": "create a HTML feedback Block e.g. for an EMail Body"
+    },
+ 
+    "ref": "github.com/JGrotex/tci-wi-smalltools-extension/smalltools/activity/createHTML",
+    "inputs": [
+        {
+            "name": "Headline",
+            "type": "string",
+            "required": true
+        },
+        {
+            "name": "Body",
+            "type": "string",
+            "required": true
+        },
+        {
+            "name": "Footer",
+            "type": "string",
+            "required": true
+        }
+    ],
+  
+    "outputs": [
+        {
+            "name": "html",
+            "type": "string"
+        }
+    ]
+}
