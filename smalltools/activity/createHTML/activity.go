@@ -76,9 +76,10 @@ func (a *EmailValidationActivity) Eval(context activity.Context) (done bool, err
 	}
 
 	//mime := "MIME-version: 1.0;\nContent-Type: text/html; charset=\"UTF-8\";\n\n"
-	fullHTML := mime + HTMLheader + HTMLhead1 + LogoURL + HTMLhead2 + Headline + HTMLcontent1 + Body + HTMLcontent2 + DirectLinkURL + HTMLcontent3 + Footer + HTMLfoot
+	fullHTML := HTMLheader + HTMLhead1 + LogoURL + HTMLhead2 + Headline + HTMLcontent1 + Body + HTMLcontent2 + DirectLinkURL + HTMLcontent3 + Footer + HTMLfoot
 
-	context.SetOutput(ovHTML, strings.Replace(fullHTML, "'", "\"", -1))
+	//context.SetOutput(ovHTML, strings.Replace(fullHTML, "'", "\"", -1))
+	context.SetOutput(ovHTML, fullHTML)
 	//createHTML - End
 
 	return true, nil
