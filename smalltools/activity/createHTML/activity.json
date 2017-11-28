@@ -1,7 +1,7 @@
 {
     "name": "createHTML",
     "version": "1.0.0",
-    "title": "Concat Activity",
+    "title": "create HTML Activity",
     "author": "TIBCO Software Inc. [JGrotex]",
     "type": "flogo:activity",
      
@@ -15,12 +15,22 @@
     "ref": "github.com/JGrotex/tci-wi-smalltools-extension/smalltools/activity/createHTML",
     "inputs": [
         {
+            "name": "LogoURL",
+            "type": "string",
+            "required": true
+        },
+        {
             "name": "Headline",
             "type": "string",
             "required": true
         },
         {
             "name": "Body",
+            "type": "string",
+            "required": true
+        },
+        {
+            "name": "DirectLinkURL",
             "type": "string",
             "required": true
         },
