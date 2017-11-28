@@ -1,9 +1,7 @@
 # TCI WI SmallTools Extension
-first Version with just an own version of a Concat Activity, more to come ...
-e.g. will add as soon as possible a Email Validation Activity.
+first Version with just an own version of a Concat Activity, more to come ... e.g. will add as soon as possible a Email Validation Activity.
 
-Attached ZIP contains the first release v.1.2 and can just uploaded under 
-TIBCO Cloud Integration Extensions
+Attached ZIP contains the first release v.1.2 and can just uploaded under TIBCO Cloud Integration Extensions
 
 This is just the start.
 
@@ -43,7 +41,8 @@ Input
 Output
 - valid (Boolean) just Format check
 
-Example HTML Page
+Example HTML string content as Screenshot
+
 ![Pretty Email image](screenshots/prettyHTMLMail.png?raw=true "TCI WI Pretty Email Screenshot")
 
 <hr>
