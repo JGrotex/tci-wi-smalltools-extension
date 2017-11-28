@@ -29,6 +29,24 @@ Input
 
 Output
 - valid (Boolean) just Format check
- 
+
+### create HTML
+Tool creates a pretty HTML page to store e.g. into an Email body of an HTML SMTP EMail Sender
+
+Input
+- LogoURL (String)
+- Headline (String)
+- Body (String)
+- DirectLinkURL (String)
+- Footer (String)
+
+Output
+- valid (Boolean) just Format check
+
+Example HTML Page
+![Pretty Email image](screenshots/PrettyHTMLEMail.png?raw=true "TCI WI Pretty Email Screenshot")
+
 <hr>
 <sub><b>Note:</b> more TCI Extensions can be found here: https://tibcosoftware.github.io/tci-awesome/ </sub>
+
+
