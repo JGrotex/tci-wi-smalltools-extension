@@ -44,7 +44,7 @@ Output
 - valid (Boolean) just Format check
 
 Example HTML Page
-![Pretty Email image](screenshots/PrettyHTMLEMail.png?raw=true "TCI WI Pretty Email Screenshot")
+![Pretty Email image](screenshots/prettyHTMLMail.png?raw=true "TCI WI Pretty Email Screenshot")
 
 <hr>
 <sub><b>Note:</b> more TCI Extensions can be found here: https://tibcosoftware.github.io/tci-awesome/ </sub>
