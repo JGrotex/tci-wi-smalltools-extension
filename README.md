@@ -27,7 +27,7 @@ Output
 - valid (Boolean) just Format check
 
 ### create HTML
-Tool creates a pretty HTML page to store e.g. into an Email body of an HTML SMTP EMail Sender
+Tool creates a pretty HTML page to store e.g. into an Email body of an HTML SMTP EMail Sender.
 
 Input
 - LogoURL (String)
@@ -44,7 +44,8 @@ Example HTML string content as Screenshot
 ![Pretty Email image](screenshots/prettyHTMLMail.png?raw=true "TCI WI Pretty Email Screenshot")
 
 ### send HTML Email
-send HTML Emails with the Content of of the create HTML Activity, fully tested with Google SMTP Mail
+send HTML Emails with the Content of of the create HTML Activity, fully tested with Google SMTP Mail.
+Implementation is limited to what is realy needed to send a single Notification EMail. 
 
 Input
 - Server (String) part of Configuration Dialog : default "smtp.gmail.com"
