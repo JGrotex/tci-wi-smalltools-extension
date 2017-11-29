@@ -1,7 +1,5 @@
 # TCI WI SmallTools Extension
-first Version with just an own version of a Concat Activity, more to come ... e.g. will add as soon as possible a Email Validation Activity.
-
-Attached ZIP contains the first release v.1.2 and can just uploaded under TIBCO Cloud Integration Extensions
+first Version with just an own version of a Concat Activity, more to come ... e.g. will add as soon as possible a Email Validation Activity. Attached ZIP contains the first release v.1.2 and can just uploaded under TIBCO Cloud Integration Extensions
 
 This is just the start.
 
@@ -14,7 +12,7 @@ Just to show how simple a Implemenation could be.
 Input
 - string1 (String)
 - string2 (String)
-- Seperator (String, one of ";","-","+","_","|" Default is "-")
+- Seperator (String, one of ";","-","+","_","|" Default is "-") part of Configuration Dialog 
 
 Output
 - result (String) as full String
@@ -44,6 +42,21 @@ Output
 Example HTML string content as Screenshot
 
 ![Pretty Email image](screenshots/prettyHTMLMail.png?raw=true "TCI WI Pretty Email Screenshot")
+
+### send HTML Email
+send HTML Emails with the Content of of the create HTML Activity, fully tested with Google SMTP Mail
+
+Input
+- Server (String) part of Configuration Dialog : default "smtp.gmail.com"
+- Port (String) part of Configuration Dialog : default "587"
+- Sender (String) part of Configuration Dialog 
+- Pass (Password) part of Configuration Dialog 
+- To (String)
+- Subject (String)
+- HTML (String)
+
+Output
+- feedback (String) on success always "done" so far
 
 <hr>
 <sub><b>Note:</b> more TCI Extensions can be found here: https://tibcosoftware.github.io/tci-awesome/ </sub>
