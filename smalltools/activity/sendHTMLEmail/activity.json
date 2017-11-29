@@ -1,0 +1,79 @@
+{
+    "name": "sendHTMLEmail",
+    "version": "1.0.0",
+    "title": "send HTML Email Activity",
+    "author": "TIBCO Software Inc. [JGrotex]",
+    "type": "flogo:activity",
+     
+    "display": {
+       "category": "smalltools",
+       "visible": true,
+       "smallIcon": "sendHTMLEmail.png",
+       "description": "send a HTML EMail via smtp"
+    },
+ 
+    "ref": "github.com/JGrotex/tci-wi-smalltools-extension/smalltools/activity/sendHTMLEMail",
+    "inputs": [
+        {
+            "name": "Server",
+            "type": "string",
+            "required": true,
+            "display": {
+                "name": "Server Host",
+                "description": "Server Host, e.g. smtp.gmail.com"
+            },
+            "value": "smtp.gmail.com"
+        },
+        {
+            "name": "Port",
+            "type": "string",
+            "required": true,
+            "display": {
+                "name": "Server Port",
+                "description": "Server Port, e.g. 587"
+            },
+            "value": "587"
+        },
+        {
+            "name": "Sender",
+            "type": "string",
+            "required": true,
+            "display": {
+                "name": "Sender",
+                "description": "SMTP Sender EMail"
+            }
+        },
+        {
+            "name": "Pass",
+            "type": "string",
+            "required": true,
+            "display": {
+                "name": "Password",
+                "description": "SMTP EMail Sender Password",
+                "type": "password"
+            }
+        },
+        {
+            "name": "To",
+            "type": "string",
+            "required": true
+        },
+        {
+            "name": "Subject",
+            "type": "string",
+            "required": true
+        },
+        {
+            "name": "HTML",
+            "type": "string",
+            "required": true
+        }
+    ],
+  
+    "outputs": [
+        {
+            "name": "feedback",
+            "type": "string"
+        }
+    ]
+}
