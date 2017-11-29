@@ -12,7 +12,7 @@
        "description": "send a HTML EMail via smtp"
     },
  
-    "ref": "github.com/JGrotex/tci-wi-smalltools-extension/smalltools/activity/sendHTMLEMail",
+    "ref": "github.com/JGrotex/tci-wi-smalltools-extension/smalltools/activity/sendHTMLEmail",
     "inputs": [
         {
             "name": "Server",
