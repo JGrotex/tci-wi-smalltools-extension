@@ -1,0 +1,81 @@
+{
+  "name": "tibco-smtp",
+  "title": "SMTP Connector",
+  "author": "TIBCO Software Inc. [JGrotex]",
+  "type": "flogo:connector",
+  "version": "1.3.0",
+  "display": {
+    "description": "This is a SMTP Email Connector.",
+    "category": "smalltools",
+    "visible": true,
+    "smallIcon": "smtp.png"
+  },
+  "ref": "github.com/JGrotex/tci-wi-smalltools-extension/smalltools/connector/smtp",
+  "keyfield": "name",
+  "settings": [
+    {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "display": {
+        "name": "Connection Name",
+        "description": "Name of the connection"
+      }
+    },
+    {
+      "name": "description",
+      "type": "string",
+      "display": {
+        "name": "Description",
+        "description": "Connection description"
+      }
+    },
+    {
+      "name": "Server",
+      "type": "string",
+      "required": true,
+      "display": {
+          "name": "Server Host",
+          "description": "Server Host, e.g. smtp.gmail.com"
+      },
+      "value": "smtp.gmail.com"
+  },
+  {
+      "name": "Port",
+      "type": "string",
+      "required": true,
+      "display": {
+          "name": "Server Port",
+          "description": "Server Port, e.g. 587"
+      },
+      "value": "587"
+  },
+  {
+      "name": "Sender",
+      "type": "string",
+      "required": true,
+      "display": {
+          "name": "Sender",
+          "description": "SMTP Sender EMail"
+      }
+  },
+  {
+      "name": "Pass",
+      "type": "string",
+      "required": true,
+      "display": {
+          "name": "Password",
+          "description": "SMTP EMail Sender Password",
+          "type": "password"
+      }
+  }
+  ],
+  "actions": [
+    {
+      "name": "Connect",
+      "display": {
+        "readonly": true
+      }
+    }
+  ]
+}
