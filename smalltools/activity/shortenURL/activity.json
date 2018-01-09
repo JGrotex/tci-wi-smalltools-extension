@@ -1,0 +1,30 @@
+{
+    "name": "shortenURL",
+    "version": "1.0.0",
+    "title": "shortenURL Activity",
+    "author": "TIBCO Software Inc. [JGrotex]",
+    "type": "flogo:activity",
+     
+    "display": {
+       "category": "smalltools",
+       "visible": true,
+       "smallIcon": "shorten.png",
+       "description": "Activity returns a shorten URL via Google API"
+    },
+ 
+    "ref": "github.com/JGrotex/tci-wi-smalltools-extension/smalltools/activity/shortenURL",
+    "inputs": [
+           {
+            "name": "longURL",
+            "type": "string",
+            "required": true
+           }
+    ],
+  
+    "outputs": [
+           {
+            "name": "shortURL",
+            "type": "string"
+          }
+    ]
+}
