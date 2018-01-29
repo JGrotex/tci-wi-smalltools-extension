@@ -40,7 +40,7 @@ func TestEval(t *testing.T) {
 	act := NewActivity(getActivityMetadata())
 	tc := test.NewTestActivityContext(act.Metadata())
 	//setup attrs
-	tc.SetInput("firstString", "Hello")
+	tc.SetInput("firstString", "Hello M")
 	tc.SetInput("secondString", "TCIWI!")
 	tc.SetInput("useSeparator", true)
 	tc.SetInput("separator", "-")
@@ -49,7 +49,7 @@ func TestEval(t *testing.T) {
 	assert.Nil(t, err)
 
 	result := tc.GetOutput("result")
-	assert.Equal(t, result, "Hello-TCIWI!")
+	assert.Equal(t, "Hello-TCIWI!", result)
 
 	t.Log(result)
 }
