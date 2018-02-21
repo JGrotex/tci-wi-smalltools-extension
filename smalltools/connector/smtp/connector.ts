@@ -1,8 +1,4 @@
-/*
- * Copyright © 2018. TIBCO Software Inc. [JGR]
- * This file is subject to the license terms contained
- * in the license file that is distributed with this file.
- */
+
 import {Injectable} from "@angular/core";
 import {WiContrib, WiServiceHandlerContribution, AUTHENTICATION_TYPE} from "wi-studio/app/contrib/wi-contrib";
 import {IConnectorContribution, IFieldDefinition, IActionResult, ActionResult} from "wi-studio/common/models/contrib";

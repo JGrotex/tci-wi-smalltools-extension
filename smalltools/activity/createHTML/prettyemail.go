@@ -1,5 +1,3 @@
-/* MIT License
-Copyright (c) 2017 Jörg Grote */
 package createHTML
 
 const (
