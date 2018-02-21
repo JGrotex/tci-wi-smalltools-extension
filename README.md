@@ -33,6 +33,7 @@ Output
 Tool creates a pretty HTML page to store e.g. into an Email body of an HTML SMTP EMail Sender.
 
 Input
+- templateURL (String) ... coming soon, not fully implemented yet
 - LogoURL (String)
 - Headline (String)
 - Body (String)
