@@ -23,7 +23,7 @@ const (
 		"@media only screen and (max-width: 640px) {.goContainer {width: 445px !important;}.section-img img {width: 325px !important;height: auto !important;}}" +
 		"@media only screen and (max-width: 480px) {.goContainer {width: 280px !important;}.section-img img {width: 200px !important;height: auto !important;}}" +
 		"</style>" +
-		"<!-- [if gte mso 9]><style type=”text/css”>body {font-family: arial, sans-serif!important;}</style><![endif]-->" +
+		"<!-- [if gte mso 9]><style type='text/css'>body {font-family: arial, sans-serif!important;}</style><![endif]-->" +
 		"</head>"
 	//HTMLhead1 content
 	HTMLhead1 = "<body class='respond' leftmargin='0' topmargin='0' marginwidth='0' marginheight='0'>" +

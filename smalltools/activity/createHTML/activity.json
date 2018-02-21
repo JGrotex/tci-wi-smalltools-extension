@@ -15,6 +15,11 @@
     "ref": "github.com/JGrotex/tci-wi-smalltools-extension/smalltools/activity/createHTML",
     "inputs": [
         {
+            "name": "templateURL",
+            "type": "string",
+            "required": false
+        },
+        {
             "name": "LogoURL",
             "type": "string",
             "required": true
