@@ -96,7 +96,12 @@ func (a *EmailValidationActivity) Eval(context activity.Context) (done bool, err
 		var HTMLtemplate = string(body)
 		//replace content
 
-		//placeholder {logoURL} {logoURL} {headline} {body} {footer}
+		//placeholder {logoURL} {linkURL} {headline} {body} {footer}
+		HTMLtemplate = strings.Replace(HTMLtemplate, "{logoURL}", LogoURL, 1)
+		HTMLtemplate = strings.Replace(HTMLtemplate, "{linkURL}", DirectLinkURL, 1)
+		HTMLtemplate = strings.Replace(HTMLtemplate, "{headline}", Headline, 1)
+		HTMLtemplate = strings.Replace(HTMLtemplate, "{body}", Body, 1)
+		HTMLtemplate = strings.Replace(HTMLtemplate, "{footer}", Footer, 1)
 
 		//result
 		fullHTML = HTMLtemplate
