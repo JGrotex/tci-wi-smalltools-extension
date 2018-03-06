@@ -36,6 +36,8 @@ func TestEval(t *testing.T) {
 	tc := test.NewTestActivityContext(act.Metadata())
 
 	//setup input attrs
+	// test against internal HTML Template, see 'prettyemail.go'
+
 	tc.SetInput("templateURL", "")
 	tc.SetInput("LogoURL", "http://www.godev.de/img/godev.png")
 	tc.SetInput("Headline", "Email Alert")
@@ -56,6 +58,9 @@ func TestEvalwithTemplate(t *testing.T) {
 	tc := test.NewTestActivityContext(act.Metadata())
 
 	//setup input attrs
+	// test against external HTML Template stored on www.godev.de
+	// same template stored in templates Folder, too.
+
 	tc.SetInput("templateURL", "http://www.godev.de/emailtemplates/default.html")
 	tc.SetInput("LogoURL", "http://www.godev.de/img/godev.png")
 	tc.SetInput("Headline", "Email Alert")
