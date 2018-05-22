@@ -86,6 +86,7 @@ func (a *EmailValidationActivity) Eval(context activity.Context) (done bool, err
 		fullHTML = HTMLheader + HTMLhead1 + LogoURL + HTMLhead2 + Headline + HTMLcontent1 + Body + HTMLcontent2 + DirectLinkURL + HTMLcontent3 + Footer + HTMLfoot
 	} else {
 		// *** create HTML from URL loaded template
+		activityLog.Info("Executing createHTML with: " + Headline + " :: " + Body + " :: " + Footer + " :: " + templateURL)
 		// load template File
 		res, err := http.Get(templateURL)
 		if err != nil {
@@ -109,6 +110,7 @@ func (a *EmailValidationActivity) Eval(context activity.Context) (done bool, err
 	//context.SetOutput(ovHTML, strings.Replace(fullHTML, "'", "\"", -1))
 	context.SetOutput(ovHTML, fullHTML)
 	//createHTML - End
+	activityLog.Info("done with createHTML")
 
 	return true, nil
 }

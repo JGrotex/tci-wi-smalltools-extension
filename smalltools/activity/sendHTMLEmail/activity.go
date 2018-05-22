@@ -159,6 +159,7 @@ func SendHTMLMail(sender string, server string, port string, a smtp.Auth, msg *M
 	if a != nil {
 		if ok, _ := c.Extension("AUTH"); ok {
 			if err = c.Auth(a); err != nil {
+				activityLog.Error("SendHTMLMail AUTH Error during Execution", "sendHTMLEmail-5099", err)
 				return err
 			}
 		}
