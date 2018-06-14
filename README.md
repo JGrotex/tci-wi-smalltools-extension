@@ -2,7 +2,7 @@
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/JGrotex/tci-wi-smalltools-extension)](https://goreportcard.com/report/github.com/JGrotex/tci-wi-smalltools-extension) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-first Version with just an own version of a Concat Activity, more to come ... e.g. will add as soon as possible a Email Validation Activity. Attached ZIP contains the first release v.1.2 and can just uploaded under TIBCO Cloud Integration Extensions
+Small Activities around Concat, Email Validation, HTML EMail creation, HTML EMail Sender, more to come. Attached ZIP contains the first release v.1.2 and can just uploaded under TIBCO Cloud Integration Extensions
 
 This is just the start.
 
