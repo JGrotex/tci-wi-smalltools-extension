@@ -50,6 +50,9 @@ Example HTML string content as Screenshot
 ### send HTML Email
 send HTML Emails with the Content of of the create HTML Activity, fully tested with Google SMTP Mail.
 Implementation is limited to what is realy needed to send a single Notification EMail. 
+You have to use 2-factor authentication with your Account to use this Extension.
+Account must be enabled for 'access to less secure apps for all users'.
+https://support.google.com/a/answer/6260879?hl=en
 
 Input
 - Server (String) part of Configuration Dialog : default "smtp.gmail.com"
