@@ -55,7 +55,7 @@ Input
 - Server (String) part of Configuration Dialog : default "smtp.gmail.com"
 - Port (String) part of Configuration Dialog : default "587"
 - Sender (String) part of Configuration Dialog 
-- Pass (Password) part of Configuration Dialog 
+- Pass (Password) App specific Password part of Configuration Dialog (see here for Detail https://support.google.com/accounts/answer/185833?p=InvalidSecondFactor)
 - To (String)
 - Subject (String)
 - HTML (String)
