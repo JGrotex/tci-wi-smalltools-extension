@@ -5,7 +5,7 @@
   "type": "flogo:connector",
   "version": "1.3.0",
   "display": {
-    "description": "This is a SMTP Email Connector.",
+    "description": "This is a SMTP Email Connector. But not used yet !!!",
     "category": "smalltools",
     "visible": true,
     "smallIcon": "smtp.png"
