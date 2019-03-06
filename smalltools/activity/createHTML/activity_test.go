@@ -61,7 +61,7 @@ func TestEvalwithTemplate(t *testing.T) {
 	// test against external HTML Template stored on www.godev.de
 	// same template stored in templates Folder, too.
 
-	tc.SetInput("templateURL", "http://www.godev.de/emailtemplates/default.html")
+	tc.SetInput("templateURL", "https://www.godev.de/emailtemplates/default.html")
 	tc.SetInput("LogoURL", "http://www.godev.de/img/godev.png")
 	tc.SetInput("Headline", "Email Alert")
 	tc.SetInput("Body", "here a TCI Alert")

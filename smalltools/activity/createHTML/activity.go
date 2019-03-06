@@ -20,7 +20,7 @@ const (
 )
 
 var (
-	activityLog = logger.GetLogger("tools-activity-emailvalidation")
+	activityLog = logger.GetLogger("tools-activity-createHTML")
 )
 
 type EmailValidationActivity struct {
